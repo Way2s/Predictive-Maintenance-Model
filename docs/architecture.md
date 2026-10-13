@@ -9,3 +9,6 @@
 
 ### Logging Conventions
 Emit UTC ISO-8601 timestamps with flat `key=value` context fields for easy log parsing.
+
+### Pagination Caps
+Enforce an upper page limit (`max_limit=100`) to keep memory footprint predictable under load.
