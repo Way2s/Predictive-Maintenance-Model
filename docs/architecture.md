@@ -12,3 +12,6 @@ Emit UTC ISO-8601 timestamps with flat `key=value` context fields for easy log p
 
 ### Pagination Caps
 Enforce an upper page limit (`max_limit=100`) to keep memory footprint predictable under load.
+
+### Retry Strategy
+Prefer bounded exponential backoff with full jitter to avoid synchronized worker spikes during upstream degradation.
